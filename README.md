@@ -12,15 +12,18 @@ Traefik se entera de los servicios nuevos a través de `providers` que monitorea
 
 ![alt text](image-2.png) Docker-compose.yml para traefik
 
-//punto 2
+![alt text](punto2.png) ejecutamos nuestro docker-compose para levantar los servicios
+![alt text](composeps.png) Observamos el estado de nuestros contenedores
 
 ![alt text](image-3.png) 
 ![alt text](image-4.png) Probando Traefik localmente
 
 ![alt text](image-5.png) Agregando el archivo whoami.yml para la aplicación de prueba
 
-//punto 4
+![alt text](whoami.png) Levantamos el servicio de whoami
 
 ![alt text](image-6.png) Acceso a la aplicación de prueba
 
-// punto 6
+![alt text](routers.png) Evidenciamos que en nuestros HTTP Routers tenemos whoami.localhost.
+
+![alt text](router.png) Evidenciamos que en nuestros HTTP Routers tenemos whoami.localhost.
