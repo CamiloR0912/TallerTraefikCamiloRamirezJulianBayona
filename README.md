@@ -1,3 +1,9 @@
+### Taller traefik
+
+## Integrantes:
+  - Julian Bayona
+  - Camilo Ramirez
+
 # ¿Qué ventajas tiene enrutar por host vs por puerto? 
 El enrutamiento por host ofrece URLs más fáciles de entender como por ejemplo `api.miapp.com` en vez de miapp.com:8080, simplifica la gestión de seguridad al usar únicamente los puertos estándar `80/443`, facilita la configuración de certificados `SSL/TLS`, mejora la escalabilidad permitiendo agregar nuevos servicios `sin abrir puertos adicionales`, y proporciona **mejor experiencia de usuario** al evitar URLs con números de puerto que pueden ser bloqueadas por proxies corporativos o resultar confusas para los usuarios finales.
 
