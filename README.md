@@ -14,23 +14,29 @@ Los labels en servicios proporcionan `configuración dinámica` donde cada servi
 Traefik se entera de los servicios nuevos a través de `providers` que monitorean continuamente diferentes fuentes de datos. En el caso de Docker, Traefik usa el Docker Provider que se conecta al socket de Docker `/var/run/docker.sock` y escucha eventos en tiempo real como container start, container stop, y container update. Cuando un contenedor se inicia con labels de Traefik (como traefik.enable=true), Docker emite un evento que Traefik detecta inmediatamente, lee los labels del contenedor, genera automáticamente la configuración de enrutamiento correspondiente y actualiza sus rutas sin necesidad de reiniciar, permitiendo así el auto-descubrimiento dinámico de servicios.
 
 ---
-![alt text](image-1.png) Versión de docker y docker compose
+![alt text](image-1.png) 
+Versión de docker y docker compose
 
-![alt text](image-2.png) Docker-compose.yml para traefik
+![alt text](image-2.png) 
+Docker-compose.yml para traefik
 
-![alt text](punto2.png) ejecutamos nuestro docker-compose para levantar los servicios
+![alt text](punto2.png) 
+ejecutamos nuestro docker-compose para levantar los servicios
 ![alt text](composeps.png) 
 Observamos el estado de nuestros contenedores
 
 ![alt text](image-3.png) 
-![alt text](image-4.png) Probando Traefik localmente
+![alt text](image-4.png) 
+Probando Traefik localmente
 
-![alt text](image-5.png) Agregando el archivo whoami.yml para la aplicación de prueba
+![alt text](image-5.png) 
+Agregando el archivo whoami.yml para la aplicación de prueba
 
 ![alt text](whoami.png) 
 Levantamos el servicio de whoami
 
-![alt text](image-6.png) Acceso a la aplicación de prueba
+![alt text](image-6.png) 
+Acceso a la aplicación de prueba
 
 ![alt text](routers.png) 
 Evidenciamos que en nuestros HTTP Routers tenemos whoami.localhost.
